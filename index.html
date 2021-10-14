@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="scripts.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+</head>
+
+<body onload="onload()">
+    <div class="container-fluid">
+
+        <header id="header">
+            <h1 class="text-uppercase">Welcome to my Bootstrap Demo</h1>
+
+            <ul class="dropdownButton">
+                <h2 onclick="dropdown()">Menu</h2>
+                <li class="dropdownContent">Item 1</li>
+                <li class="dropdownContent">Item 2</li>
+                <li class="dropdownContent">Item 3</li>
+            </ul>
+
+        </header>
+
+        <div class="row">
+            <div class="col-xs-6 col-sm-6">
+                <h2>Lorem ipsum <small>dolor sit amet, consectetur adipiscing elit. Nullam at purus bibendum lorem
+                        sagittis finibus. Suspendisse mattis condimentum ligula, at hendrerit massa tincidunt non.
+                        Quisque ipsum nisl, mattis eu sapien eget, sollicitudin fermentum ligula. In hac habitasse
+                        platea dictumst. Sed posuere mi vitae risus ultrices, a elementum lacus finibus. Phasellus orci
+                        nibh, ullamcorper eleifend ultricies non, euismod laoreet nisl. Aliquam efficitur commodo neque
+                        pretium aliquet.</small></h2>
+            </div>
+            <div class="col-xs-6 col-sm-6">
+                <h2>Lorem ipsum <small>dolor sit amet, consectetur adipiscing elit. Nullam at purus bibendum lorem
+                        sagittis finibus. Suspendisse mattis condimentum ligula, at hendrerit massa tincidunt non.
+                        Quisque ipsum nisl, mattis eu sapien eget, sollicitudin fermentum ligula. In hac habitasse
+                        platea dictumst. Sed posuere mi vitae risus ultrices, a elementum lacus finibus. Phasellus orci
+                        nibh, ullamcorper eleifend ultricies non, euismod laoreet nisl. Aliquam efficitur commodo neque
+                        pretium aliquet.</small></h2>
+            </div>
+
+            <!-- Add the extra clearfix for only the required viewport -->
+            <div class="clearfix visible-xs-block"></div>
+
+            <div class="col-xs-6 col-sm-6">
+                <h2>Lorem ipsum <small>dolor sit amet, consectetur adipiscing elit. Nullam at purus bibendum lorem
+                        sagittis finibus. Suspendisse mattis condimentum ligula, at hendrerit massa tincidunt non.
+                        Quisque ipsum nisl, mattis eu sapien eget, sollicitudin fermentum ligula. In hac habitasse
+                        platea dictumst. Sed posuere mi vitae risus ultrices, a elementum lacus finibus. Phasellus orci
+                        nibh, ullamcorper eleifend ultricies non, euismod laoreet nisl. Aliquam efficitur commodo neque
+                        pretium aliquet.</small></h2>
+            </div>
+            <div class="col-xs-6 col-sm-6">
+                <h2>Lorem ipsum <small>dolor sit amet, consectetur adipiscing elit. Nullam at purus bibendum lorem
+                        sagittis finibus. Suspendisse mattis condimentum ligula, at hendrerit massa tincidunt non.
+                        Quisque ipsum nisl, mattis eu sapien eget, sollicitudin fermentum ligula. In hac habitasse
+                        platea dictumst. Sed posuere mi vitae risus ultrices, a elementum lacus finibus. Phasellus orci
+                        nibh, ullamcorper eleifend ultricies non, euismod laoreet nisl. Aliquam efficitur commodo neque
+                        pretium aliquet.</small></h2>
+            </div>
+            
+            
+            
+            <div class="col-xs-6 col-sm-6"><br><img
+                    src="https://t3.ftcdn.net/jpg/02/74/70/20/360_F_274702029_dC9sFwkI5xpuHuHvGFcma0zmYTSrE16i.jpg">
+            </div>
+            <div class="col-xs-6 col-sm-6"><br><img
+                    src="https://media.istockphoto.com/photos/top-view-office-desk-picture-id480951798?k=20&m=480951798&s=170667a&w=0&h=iH-5Wy5FiWFKkffyNPU3-UYEY719zwxYNwSYFq47Ivw=">
+            </div>
+            
+            <!-- Add the extra clearfix for only the required viewport -->
+            <div class="clearfix visible-xs-block"></div>
+            
+            <div class="col-xs-6 col-sm-6"><br><button>View Image</button></div>
+            <div class="col-xs-6 col-sm-6"><br><button>View Image</button></div>
+            
+            <div class="col-xs-6 col-sm-6">
+                <blockquote>
+                    <p><strong>Lorem ipsum</strong> dolor sit amet, consectetur adipiscing elit</p>
+                    <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                </blockquote>
+            </div>
+            <div class="col-xs-6 col-sm-6">
+                <blockquote>
+                    <p><strong>Lorem ipsum</strong> dolor sit amet, consectetur adipiscing elit</p>
+                    <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                </blockquote>
+            </div>
+            </div>
+
+            <div class="row">
+
+                <form>
+                    <div class="form-group">
+                      <label for="exampleInputEmail1">Email address</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputPassword1">Password</label>
+                      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputFile">File input</label>
+                      <input type="file" id="exampleInputFile">
+                      <p class="help-block">Example block-level help text here.</p>
+                    </div>
+                    <div class="checkbox">
+                      <label>
+                        <input type="checkbox"> Check me out
+                      </label>
+                    </div>
+                    <button type="submit" class="btn btn-default">Submit</button>
+                  </form>
+
+            </div>
+
+
+        <footer>
+
+            <div class="row">
+
+                <div class="col-xs-6 col-sm-6"><br>
+                    <address>
+                        <strong>Twitter, Inc.</strong><br>
+                        1355 Market Street, Suite 900<br>
+                        San Francisco, CA 94103<br>
+                        <abbr title="Phone">P:</abbr> (123) 456-7890
+                    </address>
+                </div>
+                <div class="col-xs-6 col-sm-6">
+                    <address>
+                        <strong><br>Full Name</strong><br>
+                        <a href="mailto:#">first.last@example.com</a>
+                    </address>
+                </div>
+
+            </div>
+
+        </footer>
+
+
+    </div>
+
+
+</body>
+
+
+
+
+</html>
