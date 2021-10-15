@@ -19,16 +19,22 @@
         <header id="header">
             <h1 class="text-uppercase">Welcome to my Bootstrap Demo</h1>
 
-            <ul class="dropdownButton">
-                <h2 onclick="dropdown()">Menu</h2>
-                <li class="dropdownContent">Item 1</li>
-                <li class="dropdownContent">Item 2</li>
-                <li class="dropdownContent">Item 3</li>
-            </ul>
+            <div class="dropdown">
+                <div class="center">
+                    <button class="btn btn-outline-dark dropdown-toggle" type="button" data-toggle="dropdown">Menu
+                        <span class="caret"></span></button>
+                    <ul class="dropdown-menu">
+                        <li><a id="scroll1">Text</a></li>
+                        <li><a id="scroll2">Images</a></li>
+                        <li><a id="scroll3">Contact Form</a></li>
+                    </ul>
+                </div>
+            </div>
+
 
         </header>
 
-        <div class="row">
+        <div class="row" id="text1">
             <div class="col-xs-6 col-sm-6">
                 <h2>Lorem ipsum <small>dolor sit amet, consectetur adipiscing elit. Nullam at purus bibendum lorem
                         sagittis finibus. Suspendisse mattis condimentum ligula, at hendrerit massa tincidunt non.
@@ -68,7 +74,7 @@
             
             
             
-            <div class="col-xs-6 col-sm-6"><br><img
+            <div class="col-xs-6 col-sm-6" id="img1"><br><img
                     src="https://t3.ftcdn.net/jpg/02/74/70/20/360_F_274702029_dC9sFwkI5xpuHuHvGFcma0zmYTSrE16i.jpg">
             </div>
             <div class="col-xs-6 col-sm-6"><br><img
@@ -95,7 +101,7 @@
             </div>
             </div>
 
-            <div class="row">
+            <div class="row" id="form1">
 
                 <form>
                     <div class="form-group">
@@ -155,3 +161,6 @@
 
 
 </html>
+<script>
+   
+</script>

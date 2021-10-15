@@ -13,22 +13,18 @@ header {
     top: 10px;
     position: sticky;
     border: solid rgb(0, 0, 0) 1px;
-    padding: 0.5em;
+    padding: 3em;
     background-color: rgb(228, 228, 228);
     color: rgb(0, 0, 0);
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-    height: 11em;
+    height: fit-content;
     z-index: 10;
     margin-bottom: 2.5em;
     width: 130%;
     margin-left: -15%;
 }
 
-@media only screen and (max-width: 410px) {
-    header {
-        height: 20em;
-    }
-}
+
 
 header h1 {
     font-size: 50px;
@@ -41,24 +37,12 @@ header ul {
     font-size: 30px;
     width: fit-content;
     background-color: rgb(228, 228, 228);
-    height: 0em;
-    top: -0.5em;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
-@media only screen and (max-width: 750px) {
-    header ul {
-        visibility: hidden;
-    }
 
-    header h1 {
-        margin-top: 0.4em;
-    }
-}
 
-header li {
-    z-index: 8;
-}
+
 
 ul {
     cursor: pointer;
@@ -83,11 +67,59 @@ li {
 .dropdownButton {
     position: relative;
 }
+.center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
 
 .dropdownContent {
     visibility: hidden;
     padding-top: 0.2em;
 }
+.dropdown {
+    position: relative;
+    margin-top: 2em;
+}
+.dropdown a {
+    text-align: center;
+}
+.dropdown-menu {
+    margin: 0;
+    position: absolute;
+    top: 8.3em;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background-color: rgb(228, 228, 228);
+}
+
+
+/*.dropdown button {
+    background-color:rgb(56, 56, 56);
+    border-color: rgb(228, 228, 228) 1px;
+    color: white;
+}*/
+.dropdown button:hover {
+    background-color:rgb(204, 203, 203);
+    border-color: rgb(83, 83, 83) 1px;
+    color: black;
+}
+.dropdown button:active {
+    background-color:rgb(148, 148, 148);
+    border-color: rgb(83, 83, 83) 1px;
+    color: black;
+}/*
+.dropdown button:focus {
+    background-color:rgb(56, 56, 56);
+    border-color: rgb(228, 228, 228) 1px;
+    color: white;
+}
+*/
+
 
 .row {
     padding: 2em;

@@ -1,5 +1,6 @@
 function onload() {
 
+    menuClick();
     console.log("Loaded")
 
 }
@@ -23,4 +24,41 @@ function dropdown() {
         border[0].style.border = "solid rgb(255, 255, 255) 1px";
         border[0].style.paddingRight = "1em";
     }
+}
+
+function menuClick() {
+    var extraOffset;
+
+    $("#scroll1").click(function () {
+        if (screen.width <= 950) {
+            extraOffset = 250;
+        } else {
+            extraOffset = 200;
+        }
+        $('html, body').animate({
+            scrollTop: $("#text1").offset().top - extraOffset
+        }, 2000);
+    });
+
+    $("#scroll2").click(function () {
+        if (screen.width <= 950) {
+            extraOffset = 250;
+        } else {
+            extraOffset = 200;
+        }
+        $('html, body').animate({
+            scrollTop: $("#img1").offset().top - extraOffset
+        }, 2000);
+    });
+
+    $("#scroll3").click(function () {
+        if (screen.width <= 950) {
+            extraOffset = 250;
+        } else {
+            extraOffset = 200;
+        }
+        $('html, body').animate({
+            scrollTop: $("#form1").offset().top - extraOffset
+        }, 2000);
+    });
 }
